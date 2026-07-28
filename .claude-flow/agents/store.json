@@ -1,0 +1,18 @@
+{
+  "agents": {
+    "agent-1784615269651-s6pira": {
+      "agentId": "agent-1784615269651-s6pira",
+      "agentType": "coder",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "provider": "anthropic"
+      },
+      "createdAt": "2026-07-21T06:27:49.651Z",
+      "model": "sonnet",
+      "modelRoutedBy": "default"
+    }
+  },
+  "version": "3.0.0"
+}

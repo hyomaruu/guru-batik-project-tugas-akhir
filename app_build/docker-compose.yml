@@ -1,0 +1,86 @@
+version: "3.9"
+
+services:
+  # ─── PostgreSQL Database ───────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: gurubatik_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-gurubatik}
+      POSTGRES_USER: ${POSTGRES_USER:-gurubatik}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-gurubatik_secret}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/migrations:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "5432:5432"
+    networks:
+      - gurubatik_net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-gurubatik} -d ${POSTGRES_DB:-gurubatik}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─── Go Backend API ────────────────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: gurubatik_backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-gurubatik}:${POSTGRES_PASSWORD:-gurubatik_secret}@postgres:5432/${POSTGRES_DB:-gurubatik}?sslmode=disable
+      JWT_SECRET: ${JWT_SECRET:-super_secret_jwt_key_change_in_prod}
+      ML_SERVICE_URL: http://ml-service:8000
+      PORT: 8080
+    ports:
+      - "8080:8080"
+    networks:
+      - gurubatik_net
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ─── Python ML Service ─────────────────────────────────────────────────
+  ml-service:
+    build:
+      context: ./ml-service
+      dockerfile: Dockerfile
+    container_name: gurubatik_ml
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-gurubatik}:${POSTGRES_PASSWORD:-gurubatik_secret}@postgres:5432/${POSTGRES_DB:-gurubatik}
+    ports:
+      - "8000:8000"
+    networks:
+      - gurubatik_net
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ─── Next.js Frontend ─────────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: gurubatik_frontend
+    restart: unless-stopped
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8080/api/v1
+      NEXT_PUBLIC_ML_URL: http://localhost:8000
+    ports:
+      - "3000:3000"
+    networks:
+      - gurubatik_net
+    depends_on:
+      - backend
+      - ml-service
+
+networks:
+  gurubatik_net:
+    driver: bridge
+
+volumes:
+  postgres_data:

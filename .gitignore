@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+dist/
+build/
+.next/
+out/
+.env
+.env.local
+
+# Go
+vendor/
+bin/
+pkg/
+*.exe
+
+# Python / ML
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
