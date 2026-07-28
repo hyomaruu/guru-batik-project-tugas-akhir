@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { adminRFMApi } from "@/lib/api";
 import toast, { Toaster } from "react-hot-toast";
 import { exportToPDF } from "@/lib/pdf";
@@ -30,9 +30,7 @@ export default function RFMPage() {
   const [hasData, setHasData] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => { loadResults(); }, [page, segmentFilter]);
-
-  function loadResults() {
+  const loadResults = useCallback(() => {
     setLoading(true);
     const params: Record<string, string> = { page: String(page), limit: "20" };
     if (segmentFilter) params.segment = segmentFilter;
@@ -46,7 +44,9 @@ export default function RFMPage() {
       })
       .catch(() => {})
       .finally(() => setLoading(false));
-  }
+  }, [page, segmentFilter]);
+
+  useEffect(() => { loadResults(); }, [loadResults]);
 
   async function handleCalculate() {
     setCalculating(true);
@@ -193,7 +193,7 @@ export default function RFMPage() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
           </svg>
           <p className="text-sm font-medium text-ink">Belum ada data RFM</p>
-          <p className="text-sm text-muted mt-1">Klik "Hitung RFM Sekarang" untuk memulai analisis.</p>
+          <p className="text-sm text-muted mt-1">Klik &quot;Hitung RFM Sekarang&quot; untuk memulai analisis.</p>
         </div>
       ) : (
         <div className="admin-card p-0 overflow-hidden" id="rfm-table-container">

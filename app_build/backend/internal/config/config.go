@@ -8,10 +8,10 @@ import (
 )
 
 type Config struct {
-	DatabaseURL   string
-	JWTSecret     string
-	MLServiceURL  string
-	Port          string
+	DatabaseURL  string
+	JWTSecret    string
+	MLServiceURL string
+	Port         string
 }
 
 func Load() *Config {

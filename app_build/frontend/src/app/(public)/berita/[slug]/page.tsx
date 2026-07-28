@@ -85,7 +85,7 @@ export default async function ArticleDetailPage({ params }: Props) {
 
             {article.excerpt && (
               <p className="text-lg md:text-xl text-blue-100/70 max-w-2xl mx-auto leading-relaxed italic border-l-2 border-blue-500/50 pl-6">
-                "{article.excerpt}"
+                &quot;{article.excerpt}&quot;
               </p>
             )}
           </ScrollReveal>

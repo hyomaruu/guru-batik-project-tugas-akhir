@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
+	"golang.org/x/crypto/bcrypt"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"golang.org/x/crypto/bcrypt"
 
 	"gurubatik-backend/internal/config"
 	"gurubatik-backend/internal/model"

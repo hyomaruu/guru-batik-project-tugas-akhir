@@ -454,7 +454,7 @@ export default function KMeansPage() {
       <div className="admin-card-soft text-xs text-muted space-y-2" id="kmeans-explanation">
         <p className="font-semibold text-body">Cara Kerja K-Means di Sistem Ini</p>
         <p>1. Data RFM (Recency, Frequency, Monetary) dinormalisasi menggunakan <span className="font-mono bg-canvas-soft-2 px-1 rounded">StandardScaler</span>.</p>
-        <p>2. Algoritma <span className="font-mono bg-canvas-soft-2 px-1 rounded">KMeans(init="k-means++", n_init=10)</span> dijalankan untuk membagi pelanggan ke dalam k kelompok.</p>
+        <p>2. Algoritma <span className="font-mono bg-canvas-soft-2 px-1 rounded">KMeans(init=&quot;k-means++&quot;, n_init=10)</span> dijalankan untuk membagi pelanggan ke dalam k kelompok.</p>
         <p>3. Visualisasi 2D dibuat menggunakan <span className="font-mono bg-canvas-soft-2 px-1 rounded">PCA(n_components=2)</span> untuk proyeksi scatter plot.</p>
         <p>4. Prioritas cluster ditentukan berdasarkan composite score: R×35% + F×35% + M×30%.</p>
         <p>5. Metrik kualitas: <strong>Inertia</strong> (semakin kecil semakin baik) dan <strong>Silhouette Score</strong> (mendekati 1 = cluster sangat terpisah).</p>

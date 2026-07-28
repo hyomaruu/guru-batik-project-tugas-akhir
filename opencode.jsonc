@@ -1,0 +1,35 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "C:\\Users\\blank\\.local\\share\\opencode\\skills\\ponytail\\.opencode\\plugins\\ponytail.mjs"
+  ],
+  "mcp": {
+    "codegraph": {
+      "type": "local",
+      "command": [
+        "codegraph",
+        "serve",
+        "--mcp"
+      ],
+      "enabled": true
+    },
+    "github": {
+      "type": "local",
+      "command": ["npx", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "enabled": true
+    },
+    "context7": {
+      "type": "local",
+      "command": ["npx", "@upstash/context7-mcp"],
+      "enabled": true
+    },
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "@playwright/mcp"],
+      "enabled": true
+    }
+  }
+}

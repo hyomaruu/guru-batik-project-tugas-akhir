@@ -142,7 +142,7 @@ export const adminArticleApi = {
       body: form,
     }).then((r) => r.json() as Promise<UploadImageResponse>);
   },
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars -- unused type marker
   _uploadImageData: null as unknown as UploadImageData,
 };
 

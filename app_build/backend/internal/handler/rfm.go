@@ -128,9 +128,9 @@ func (h *RFMHandler) Calculate(c *fiber.Ctx) error {
 		"success": true,
 		"message": fmt.Sprintf("RFM berhasil dihitung untuk %d pelanggan", len(results)),
 		"data": fiber.Map{
-			"results":          results,
-			"segment_summary":  segments,
-			"calculated_at":    time.Now(),
+			"results":         results,
+			"segment_summary": segments,
+			"calculated_at":   time.Now(),
 		},
 	})
 }

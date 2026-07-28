@@ -321,7 +321,7 @@ func TestUpdateProfile(t *testing.T) {
 				AddRow(adminUser.ID, adminUser.Username, adminUser.Email, adminUser.Password))
 
 		reqBody, _ := json.Marshal(UpdateProfileRequest{
-			Username: "s",    // Too short
+			Username: "s",     // Too short
 			Password: "short", // Too short
 		})
 		req := httptest.NewRequest(http.MethodPut, "/profile", bytes.NewBuffer(reqBody))
@@ -338,7 +338,6 @@ func TestUpdateProfile(t *testing.T) {
 		errors := res["errors"].([]interface{})
 		assert.Len(t, errors, 2) // username, password
 	})
-
 
 	t.Run("username already taken", func(t *testing.T) {
 		app := fiber.New()

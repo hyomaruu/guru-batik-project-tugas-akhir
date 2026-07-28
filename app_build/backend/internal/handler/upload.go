@@ -59,8 +59,8 @@ func (h *UploadHandler) UploadImage(c *fiber.Ctx) error {
 	}
 
 	// Bangun URL lokal
-	// Host bisa diambil dari koneksi (c.BaseURL()), 
-	// namun untuk konsistensi pada REST API yang bisa diakses dari frontend terpisah (localhost:3000), 
+	// Host bisa diambil dari koneksi (c.BaseURL()),
+	// namun untuk konsistensi pada REST API yang bisa diakses dari frontend terpisah (localhost:3000),
 	// URL absolut direkomendasikan jika kita ingin frontend langsung memakainya di src.
 	// Jika baseUrl dari fiber adalah localhost:8080, kita gunakan itu.
 	fileUrl := fmt.Sprintf("%s/uploads/images/%s", c.BaseURL(), newFilename)

@@ -1,0 +1,97 @@
+[CodeGraph] v1.5.0 is available (this server is running v1.4.1). Update with `codegraph upgrade`.
+[CodeGraph daemon] Listening on \\.\pipe\codegraph-fcdeb585c653fe60 (pid 8856, v1.4.1). Idle timeout 300000ms.
+[CodeGraph MCP] File watcher active — graph will auto-sync on changes
+[CodeGraph MCP] Query pool: up to 11 worker thread(s) for concurrent reads.
+[CodeGraph MCP] Caught up 210 file(s) changed since last run
+[CodeGraph] v1.5.0 is available (this server is running v1.4.1). Update with `codegraph upgrade`.
+[CodeGraph daemon] Listening on \\.\pipe\codegraph-fcdeb585c653fe60 (pid 12156, v1.4.1). Idle timeout 300000ms.
+[CodeGraph MCP] File watcher active — graph will auto-sync on changes
+[CodeGraph MCP] Query pool: up to 11 worker thread(s) for concurrent reads.
+[CodeGraph daemon] Shutting down (idle timeout; clients=0).
+[CodeGraph] v1.5.0 is available (this server is running v1.4.1). Update with `codegraph upgrade`.
+[CodeGraph daemon] Listening on \\.\pipe\codegraph-fcdeb585c653fe60 (pid 8492, v1.4.1). Idle timeout 300000ms.
+[CodeGraph MCP] File watcher active — graph will auto-sync on changes
+[CodeGraph MCP] Query pool: up to 11 worker thread(s) for concurrent reads.
+[CodeGraph MCP] Auto-synced 1 file(s) in 1732ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 460ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 546ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 556ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 801ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 488ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 387ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 319ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 309ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 575ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 309ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 395ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 291ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 488ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 296ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 521ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 511ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 276ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 317ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 454ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 619ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 386ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 328ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 466ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 296ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 335ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 377ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 722ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 674ms
+[CodeGraph MCP] Auto-synced 2 file(s) in 413ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 249ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 366ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 362ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 395ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 470ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 299ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 342ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 984ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 1072ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 694ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 441ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 376ms
+[CodeGraph daemon] Shutting down (idle timeout; clients=0).
+[CodeGraph] v1.5.0 is available (this server is running v1.4.1). Update with `codegraph upgrade`.
+[CodeGraph daemon] Listening on \\.\pipe\codegraph-fcdeb585c653fe60 (pid 22772, v1.4.1). Idle timeout 300000ms.
+[CodeGraph MCP] File watcher active — graph will auto-sync on changes
+[CodeGraph MCP] Query pool: up to 11 worker thread(s) for concurrent reads.
+[CodeGraph MCP] Caught up 6 file(s) changed since last run
+[CodeGraph MCP] Auto-synced 1 file(s) in 592ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 416ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 912ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 440ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 465ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 589ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 445ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 406ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 306ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 372ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 471ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 371ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 732ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 328ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 249ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 824ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 736ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 955ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 1352ms
+[CodeGraph daemon] Shutting down (idle timeout; clients=0).
+[CodeGraph] v1.5.0 is available (this server is running v1.4.1). Update with `codegraph upgrade`.
+[CodeGraph daemon] Listening on \\.\pipe\codegraph-fcdeb585c653fe60 (pid 6816, v1.4.1). Idle timeout 300000ms.
+[CodeGraph MCP] File watcher active — graph will auto-sync on changes
+[CodeGraph MCP] Query pool: up to 11 worker thread(s) for concurrent reads.
+[CodeGraph daemon] socket error: write EPIPE
+[CodeGraph MCP] Auto-synced 61 file(s) in 2648ms
+[CodeGraph MCP] Auto-synced 42 file(s) in 1790ms
+[CodeGraph MCP] Auto-synced 9 file(s) in 1858ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 664ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 386ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 390ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 459ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 465ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 282ms
+[CodeGraph MCP] Auto-synced 1 file(s) in 285ms

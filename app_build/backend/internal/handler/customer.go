@@ -357,7 +357,7 @@ func (h *CustomerHandler) AddTransaction(c *fiber.Ctx) error {
 			"errors":  validator.ToValidationErrors(err),
 		})
 	}
-	
+
 	txDate, _ := time.Parse("2006-01-02", req.TransactionDate) // No error check needed, validator ensured format
 
 	// Pastikan customer ada
@@ -418,7 +418,7 @@ func (h *CustomerHandler) UpdateTransaction(c *fiber.Ctx) error {
 			"errors":  validator.ToValidationErrors(err),
 		})
 	}
-	
+
 	txDate, _ := time.Parse("2006-01-02", req.TransactionDate) // No error check needed, validator ensured format
 
 	// Update fields

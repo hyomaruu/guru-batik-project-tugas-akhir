@@ -108,7 +108,7 @@ type UpdateProfileRequest struct {
 
 func (h *AuthHandler) UpdateProfile(c *fiber.Ctx) error {
 	userID := c.Locals("userID").(uint)
-	
+
 	var req UpdateProfileRequest
 	if err := c.BodyParser(&req); err != nil {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{

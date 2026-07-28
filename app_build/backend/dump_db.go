@@ -74,7 +74,7 @@ func main() {
 			}
 			f.WriteString("\n")
 		}
-		
+
 		var count int64
 		db.Table(table).Count(&count)
 		if count > 50 {
