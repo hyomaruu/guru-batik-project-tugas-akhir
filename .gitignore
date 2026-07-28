@@ -21,3 +21,16 @@ venv/
 env/
 .pytest_cache/
 .ipynb_checkpoints/
+
+# opencode related
+.agents/
+.claude/
+.claude-flow/
+.codegraph/
+.gemini/
+.mcp/
+.swarm/
+.vscode/
+opencode.jsonc
+skills-lock.json
+CODE_MAP.md
